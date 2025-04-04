@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="campo1name">
+            Nombre y apellido:</label> <!-- tiene que tenel el nombre del input de abajo--> 
+        <input type="text" id="campo1name" name="name" placeholder="Nombre y luego apellido" required minlength="1" maxlength="30"><br><br> 
+        
+        <label for="campo2email">
+            Email personal:
+        </label> 
+        <input type="email" id="campo2email" name="email"><br>
+        
+        <label for="campo3volumen">
+            Introduzca el volumen del paquete
+        </label>
+        <input type="range" id="campo3volumen" name="volumen" min="20" max="95"><br><br>
+        
+        <label for="campo4color"> 
+            Elija el color 
+        </label>
+        <input type="color" id="campo4color" name="color"><br><br>
+        
+        <h2>Lenguaje Conocidos</h2>
+        <label for="HTML"> 
+            HTML
+        </label>
+        <input type="checkbox" id="HTML" >
+
+        <label for="CSS"> 
+            CSS 
+        </label>
+        <input type="checkbox" id="CSS">
+
+        <label for="JS"> 
+            JS
+        </label>
+        <input type="checkbox" id="JS">>
+
+        <h2>Lenguaje Favorito?</h2>
+        <label for="favorito_HTML"> 
+            HTML
+        </label>
+        <input type="radio" id="favorito_HTML" name="lenguaje_favorito" >
+
+        <label for="favorito_CSS"> 
+            CSS 
+        </label>
+        <input type="radio" id="favorito_CSS" name="lenguaje_favorito">
+
+        <label for="favorito_JS"> 
+            JS
+        </label>
+        <input type="radio" id="JS" name="lenguaje_favorito">
+
+        <br/>        <br/>
+
+        <label for="pais">
+            Selecciona el pais
+        </label>
+        <select id="pais" name="pais">
+            <option value="" selected disabled> Seleccione uno</option>
+            <option value="AR">Argntina</option>
+            <option value="BR">Brasil</option>
+            <option value="FR">Francia</option>
+        </select>
+
+        <br>
+
+        <label for="comentario">Deje su comentario</label>
+        <textarea name="comentario" id="comentario" rows="5" cols="50"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <h2>Ejemplos de todos los tipos de input</h2>
+    <form>
+      <label>Text: <input type="text" name="text" /></label><br />
+      <label>Password: <input type="password" name="password" /></label><br />
+      <label>Email: <input type="email" name="email" /></label><br />
+      <label>Number: <input type="number" name="number" /></label><br />
+      <label>Tel: <input type="tel" name="tel" /></label><br />
+      <label>URL: <input type="url" name="url" /></label><br />
+      <label>Search: <input type="search" name="search" /></label><br />
+      <label>Date: <input type="date" name="date" /></label><br />
+      <label>Time: <input type="time" name="time" /></label><br />
+      <label
+        >Datetime-local:
+        <input type="datetime-local" name="datetime-local" /></label
+      ><br />
+      <label>Month: <input type="month" name="month" /></label><br />
+      <label>Week: <input type="week" name="week" /></label><br />
+      <label>Color: <input type="color" name="color" /></label><br />
+      <label>Checkbox: <input type="checkbox" name="checkbox" /></label><br />
+      <label>Radio: <input type="radio" name="radio" /></label><br />
+      <label>Range: <input type="range" name="range" min="0" max="100" /></label
+      ><br />
+      <label>File: <input type="file" name="file" /></label><br />
+      <label>Hidden: <input type="hidden" name="hidden" /></label><br />
+      <label>Submit: <input type="submit" value="Enviar" /></label><br />
+      <label>Reset: <input type="reset" value="Restablecer" /></label><br />
+      <label>Button: <input type="button" value="Botón" /></label><br />
+    </form>
+</body>
+</html>
