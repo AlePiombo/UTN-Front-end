@@ -1,0 +1,1 @@
+1. entrar a 5 páginas y detectar, footer, header, main, y aside. marcar la foto con 

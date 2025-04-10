@@ -1,1 +1,15 @@
-!
+h1 { 
+    color: blue;
+}
+
+/* selector de clase es .nombre de la clase */
+
+.titulo-especial {
+    color: yellow;
+    font-size: 50px;
+}
+
+h1 {
+    color: rebeccapurple;
+    font-size: 10px;
+}
