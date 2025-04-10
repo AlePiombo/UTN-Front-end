@@ -1,1 +1,2 @@
 1. entrar a 5 páginas y detectar, footer, header, main, y aside. marcar la foto con 
+2. hacer las listas de navegación de MDN HTML y de Hostinger

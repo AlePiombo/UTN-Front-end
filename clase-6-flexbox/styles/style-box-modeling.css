@@ -1,0 +1,13 @@
+h1 {
+    background-color: aqua; /* Esto aplica color al fondo, incluyendo el padding */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    margin: 0; /* Espacio externo alrededor del elemento */
+    border: 10px solid red; /* Borde alrededor del elemento */
+    border-style:dashed; /* Hereda el estilo del borde del elemento padre */
+    border-radius: 10px 20px 30px 40px; /* Bordes redondeados con diferentes radios */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del elemento */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 2em; /* Tamaño de fuente del texto */
+
+
+} 
