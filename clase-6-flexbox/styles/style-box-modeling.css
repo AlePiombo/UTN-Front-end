@@ -1,13 +1,35 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+img, picture, video, canvas {
+    max-width: 100%;
+    display: block;
+}
+
+button, input, textarea, select {
+    font: inherit; /* Asegura que los controles usen la misma fuente */
+}
+
+/* probando caracteristicas de las  box */
 h1 {
-    background-color: aqua; /* Esto aplica color al fondo, incluyendo el padding */
+    background-color:aquamarine; /* Esto aplica color al fondo, incluyendo el padding */
     padding: 10px; /* Espacio interno alrededor del contenido */
     margin: 0; /* Espacio externo alrededor del elemento */
-    border: 10px solid red; /* Borde alrededor del elemento */
-    border-style:dashed; /* Hereda el estilo del borde del elemento padre */
+    border: 1px solid rgb(0, 0, 0); /* Borde alrededor del elemento */
     border-radius: 10px 20px 30px 40px; /* Bordes redondeados con diferentes radios */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del elemento */
     text-align: center; /* Alineación del texto al centro */
-    font-size: 2em; /* Tamaño de fuente del texto */
-
-
+    height: 200px; /* Altura del elemento */
+    margin: 30px 30px 30px 50px; /* Espacio externo alrededor del elemento */
+   
 } 
