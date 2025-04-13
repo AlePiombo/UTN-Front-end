@@ -1,0 +1,53 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+
+.nav-list {
+    display: flex; /* Hace que los elementos hijos se alineen horizontalmente */
+    justify-content: flex-start; /* Espacio entre los elementos */
+    padding: 0px 20px; /* Espacio interno alrededor de la lista */
+    margin: 10px 0px;
+    width: max-content; /* Ajusta el ancho al contenido de los enlaces */
+    border-bottom: 1px solid #ccc; /* Añade un borde gris claro alrededor de la lista */
+    font-family: dmsans, sans-serif; /* Cambia la fuente a DM Sans */
+    color: #1D1E20;
+    font-size: 16px;
+}
+
+.nav-list .nav-links {
+    display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+    margin: 6px 20px;
+    list-style: none;
+    padding: 0 0px;
+}
+
+.nav-list .nav-links div{
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0px 20px;
+    list-style: none;
+    text-decoration: none;  
+    font-family: dmsans, sans-serif; /* Cambia la fuente a DM Sans */
+    color: #1D1E20;
+    font-size: 16px;
+}
+.nav-list .nav-links div a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #1D1E20;
+
+}
+.new{
+    background-color: rgb(243, 110, 110);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centra el texto dentro del div */
+}
