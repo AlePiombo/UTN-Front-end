@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.reviews-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 0;
+}
+
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.reviews-carrousel-container--laptop{
+    display: none;
+    width: 686px;
+}
+
+/* Review card */
+.review-card{
+    width: 358px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #d5dfff;
+}
+
+.review-card--reviews-carrousel{
+    width: 100%;
+   
+   /*  border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgb(217, 226, 255); */
+}
+
+.review-card__header{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
+    padding: 24px 32px;
+    background-color: #f3f4fe;
+}
+
+.review-card__header img{
+    width: 64px;
+}
+
+.review-card__header__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.review-card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 278px;
+    padding: 32px 32px 40px;
+}
+
+.review-card__body p{
+    color: #2f1c6a;
+    font-size: 16px;
+}
+
+.review-card__body__rating{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: rgb(104, 62, 230);
+}
+
+.review-card__body a{
+    color:  rgb(104, 62, 230);
+    font-weight: 700;
+}
+
+
+
+/* Medida de laptop */
+@media screen and (max-width: 1279px) {
+    .reviews-container{
+        display: none;
+    }
+    .reviews-carrousel-container--laptop{
+        display: flex;
+    }
+
+    .review-card--reviews-carrousel .review-card__body{
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .reviews-carrousel-container--laptop{
+        width: 506px;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reviews-carrousel-container--laptop{
+        width: 100%;
+        padding: 16px;
+    }
+}
