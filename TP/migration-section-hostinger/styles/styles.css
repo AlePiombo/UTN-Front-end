@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* Ordeno al navegador que traiga este archivo */
+@import url('./normalize.css');
+
+:root{
+
+    --ff-text: "DM Sans", sans-serif;
+    
+    --primary-color-500: #673de6;
+    --primary-color-600: #2f1c6a;
+    --primary-color-700: #1f1346;
+}
+
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.section-container--bg-dark{
+    background-color: var(--primary-color-700);
+    color: white;
+}
+
+.section-content{
+    max-width: 1128px;
+    padding: 50px 0;
+}
+
+.titulo-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-principal{
+    font-size: 30px;
+    font-weight:900;
+}
+
+.articles-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+    flex: 1;/* Solo es valida si mi padre es flexbox */
+    background-color: white;
+    color: var(--primary-color-600);
+    padding: 25px;
+    border-radius: 10px;
+    gap: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.article-card--dark{
+    background-color: var(--primary-color-600);
+    color: white;
+}
+
+.text-size-p{
+    font-size: 16px;
+}
+
+.text-size-h{
+    font-size: 18px;
+}
+
+.icon{
+    height: 35px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: var(--primary-color-500);
+    padding: 10px 7px;
+}
+
+.contenedor-boton{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.btn-primary{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: var(--primary-color-500);
+    font-weight: 700;
+    color: white;
+}
+
+a:hover{
+    background-color: #4524aa;
+}
+
+.text-m{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 1124px) {
+    .articles-container{
+        flex-direction: column;
+    }
+    .section-content{
+        max-width: 688px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .section-content{
+        max-width: 508px;
+    }
+}
