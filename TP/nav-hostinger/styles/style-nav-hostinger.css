@@ -9,45 +9,114 @@
 
 }
 
-.nav-list {
-    display: flex; /* Hace que los elementos hijos se alineen horizontalmente */
-    justify-content: flex-start; /* Espacio entre los elementos */
-    padding: 0px 20px; /* Espacio interno alrededor de la lista */
-    margin: 10px 0px;
-    width: max-content; /* Ajusta el ancho al contenido de los enlaces */
-    border-bottom: 1px solid #ccc; /* Añade un borde gris claro alrededor de la lista */
-    font-family: dmsans, sans-serif; /* Cambia la fuente a DM Sans */
-    color: #1D1E20;
-    font-size: 16px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Un gris claro para el fondo del header */
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.nav-list .nav-links {
-    display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
-    margin: 6px 20px;
+.list-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre logo y links */
+    padding: 5px;
+}
+
+.list-container-logo {
+
+    padding: 5px;
+}
+.list-container-logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.list-container-logo .logo-icon { /* Simulación del icono H */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #555;
+    color: rgb(172, 13, 13);
+    text-align: center;
+    line-height: 24px;
+    margin-right: 8px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.list-container-links {
+
+    padding: 5px;
+}
+.list-container-links ul {
     list-style: none;
-    padding: 0 0px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre items de navegación */
+}
+.list-container-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9em;
+}
+.list-container-links ul li a:hover {
+    color: #007bff;
+}
+.list-container-links .arrow {
+    font-size: 0.7em;
+    margin-left: 3px;
 }
 
-.nav-list .nav-links div{
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    margin: 0px 20px;
-    list-style: none;
-    text-decoration: none;  
-    font-family: dmsans, sans-serif; /* Cambia la fuente a DM Sans */
-    color: #1D1E20;
-    font-size: 16px;
-}
-.nav-list .nav-links div a{
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #1D1E20;
-
-}
-.new{
-    background-color: rgb(243, 110, 110);
+.list-container-links .badge-nuevo {
+    background-color: #28a745; /* Verde */
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 12px; /* Tamaño de fuente más pequeño */
-    font-weight: bold; /* Negrita */
-    text-align: center; /* Centra el texto dentro del div */
+    font-size: 0.7em;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.config-user {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre selector de idioma y botón */
+    padding: 5px;
+}
+.config-user .language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #555;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.config-user .flag-icon { /* Para el emoji de la bandera */
+    font-size: 1.2em; 
+}
+.config-user .login-button {
+    background-color: transparent;
+    color: #007bff; /* Color de texto azul */
+    border: 1px solid #007bff; /* Borde azul */
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.config-user .login-button:hover {
+    background-color: #007bff;
+    color: white;
 }

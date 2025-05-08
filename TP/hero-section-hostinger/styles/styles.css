@@ -43,8 +43,7 @@ a{
     flex-direction: row;
     height: 576px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
     background-color: var(--neutral--0);
     padding-top: 120px;
     padding-bottom: 96px;
@@ -54,14 +53,14 @@ a{
 }
 
 .section-content__hero{
+    box-sizing: border-box;
     font-family: var(--ff-text);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 463px;
-    gap: 12px;
     height: 442px;
-    border: none;
+
 }
 .section-content__hero-header{
     display: flex;
@@ -141,6 +140,7 @@ color: green;
     color: var(--primary--800);
 font-weight: 700;
     height: 32px;
+    margin: 0 0 16px 0;
 }
 
 .section-content__hero .section-link{
@@ -149,7 +149,7 @@ font-weight: 700;
     align-items: center;
     gap: 12px;
     height: 48px;
-    font-size: 16px;
+    font-size: 12px;
 
 }
 
@@ -166,7 +166,7 @@ font-weight: 700;
     font-weight: 700;
 }
 
-.section-content__hero .section-link span{
+.section-content__hero .section-link .timer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,6 +177,7 @@ font-weight: 700;
     border: 2px solid var(--primary--100);
     font-weight: 600;
     color: var(--primary--800);
+    word-spacing: -1px;
 }
 .section-content__hero .section-note {   
     display: flex;
@@ -187,6 +188,7 @@ font-weight: 700;
     height: 24px;
     line-height: 24px;
     gap: 10px;
+    margin: 12px 0;
 }
 
 .section-content__hero .section-note .section-note__icon{   
@@ -195,6 +197,7 @@ font-weight: 700;
     display: flex;
     justify-content: start;
     align-items: center;
+
 }
 
 
