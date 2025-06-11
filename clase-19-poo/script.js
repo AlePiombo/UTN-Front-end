@@ -26,3 +26,17 @@ function crearPersona(nombre, nivel, edad){
     return nueva_persona
 }
 
+
+const p1 = crearPersona('ale', 'junior', 36)
+console.log(p1)
+
+
+function CrearPersona2(nombre, nivel, edad){
+    this.nombre = nombre,
+    this.nivel = nivel,
+    this.edad = edad
+}
+
+const p2 = new CrearPersona2 ('Ale','trainee', 26)
+
+console.log('P2 es = a ' , p2)
